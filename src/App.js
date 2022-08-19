@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Switch, Route, Routes, Link } from 'react-rout
 import Home from './componentes/pages/Home'
 import Contact from './componentes/pages/Contact'
 import NewProject from './componentes/pages/NewProject'
+import Projects from './componentes/pages/NewProject'
 import Company from './componentes/pages/Company'
-import NavBar from './componentes/NavBar'
+import NavBar from './componentes/layout/NavBar'
 
 
 //COMPONENTES
@@ -25,6 +26,7 @@ function App() {
       <Routes>
 
         <Route path='/home' element={<Home />}></Route>
+        <Route path='/projects' element={<Projects />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/company' element={<Company />}></Route>
         <Route path='/newproject' element={<NewProject />}></Route>

@@ -1,0 +1,37 @@
+.footer {  
+    color: white;
+    padding: 3em;
+    text-align: center;
+    background-color: #222;   
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.lista li{
+   margin: 0 1em;
+}
+
+.lista li:hover{
+    color: #ffbb33;
+}
+
+.lista svg {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+ 
+.copy_right {
+    margin-top: 2em;
+}
+
+.copy_right span{
+    font-weight: bold;
+    color: #ffbb33;
+}
+
+
+

@@ -5,9 +5,10 @@ import styles from './LinkButton.module.css'
 
 const LinkButton = ({to, text}) => {
   return (
-    <Link ClassName={styles.botao} to={to}>
+    <Link className={styles.botao} to={to}>
         {text}
     </Link>
+    
   )
 }
 

@@ -7,9 +7,9 @@ import styles from './ProjectForm.module.css'
 
 const ProjectForm = ({ handleSubmit, btnText, projectData }) => {
 
-
+    const [project, setProject] = useState(projectData || {})
     const [categories, setCategories] = useState([])
-    const [project, setProject] = useState(projectData || {}) 
+
 
     useEffect(() => {
 
@@ -37,6 +37,16 @@ const ProjectForm = ({ handleSubmit, btnText, projectData }) => {
         console.log(project)
     }
 
+    function handleCategory(e) {
+        setProject({
+            ...project,
+            category: {
+                id: e.target.value,
+                name: e.target.options[e.target.selectedIndex].text,
+            },
+        })
+    }
+
     return (
         <form onSubmit={submit} className={styles.form}>
             <Input
@@ -45,7 +55,7 @@ const ProjectForm = ({ handleSubmit, btnText, projectData }) => {
                 name='name'
                 placeholder='Insira o nome do projeto'
                 handleOnChange={handleChange}
-                
+
             />
             <Input
                 type='number'
@@ -59,6 +69,7 @@ const ProjectForm = ({ handleSubmit, btnText, projectData }) => {
                 name='category_id'
                 text='Selecione a categoria'
                 options={categories}
+                handleOnChange={handleChange}
             />
 
             <SubmitButton text={btnText} />

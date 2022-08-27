@@ -12,7 +12,7 @@ const NewProject = () => {
     project.cost = 0
     project.services = []
 
-    fetch("http://localhost:5000/categories/projects", {
+    fetch("http://localhost:5000/projects", {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

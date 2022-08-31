@@ -8,6 +8,8 @@ const Select = ({ text, name, options, handleOnChange, value }) => {
             <select
                 name={name}
                 id={name}
+                onChange={handleOnChange}
+                value={value || ''}
             >
                 <option value="">Selecione uma opção</option>
                 {options.map((option) => (

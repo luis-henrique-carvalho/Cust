@@ -1,24 +1,26 @@
 {
   "projects": [
     {
+      "name": "henrique",
+      "budget": "15000",
+      "category": {
+        "id": "Design",
+        "name": "Design"
+      },
       "cost": 0,
       "services": [],
       "id": 1
     },
     {
+      "name": "luis henrique",
+      "budget": "150",
+      "category": {
+        "id": "Infra",
+        "name": "Infra"
+      },
       "cost": 0,
       "services": [],
       "id": 2
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 4
     }
   ],
   "categories": [

@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Routes, Link } from 'react-rout
 import Home from './componentes/pages/Home'
 import Contact from './componentes/pages/Contact'
 import NewProject from './componentes/pages/NewProject'
-import Projects from './componentes/pages/NewProject'
+import Projects from './componentes/pages/Projects'
 import Company from './componentes/pages/Company'
 import NavBar from './componentes/layout/NavBar'
 

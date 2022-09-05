@@ -12,9 +12,9 @@ const Select = ({ text, name, options, handleOnChange, value }) => {
                 value={value || ''}
             >
                 <option value="">Selecione uma opção</option>
-                {options.map((option) => (
-                    <option value={options.id} key={option.id}>
-                        {option.name}
+                {options.map((options) => (
+                    <option value={options.id} key={options.id}>
+                        {options.name}
                     </option>
                 ))}
             </select>
@@ -23,4 +23,3 @@ const Select = ({ text, name, options, handleOnChange, value }) => {
 }
 
 export default Select
-

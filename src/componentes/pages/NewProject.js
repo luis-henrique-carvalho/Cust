@@ -5,7 +5,7 @@ import styles from './NewProject.module.css'
 
 const NewProject = () => {
 
-  const history = useNavigate()
+  const navigate = useNavigate()
 
   const createPost = (project) => {
     // Initialize cost and services 
@@ -22,6 +22,8 @@ const NewProject = () => {
     .then((resp) => resp.json())
     .then((data) => {
       console.log(data)
+      // redirect
+      navigate('/projects', {state:{message:'Projeto criado com sucesso!'}})
     })
     .catch(err => console.log(err))
 

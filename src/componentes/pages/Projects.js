@@ -44,11 +44,10 @@ const Projects = () => {
       },
     })
     .then(resp => resp.json())
-    .then(data =>{
+    .then(data => {
       setProjects(projects.filter((project) =>project.id !==id))
       setProjecMessage('projeto removido com sucesso!')
-    }   
-    ) 
+    }) 
     .catch(err => console.log(err))
   }
 

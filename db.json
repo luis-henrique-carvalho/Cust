@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "APP",
-      "budget": "120202",
+      "name": "SITE",
+      "budget": "5000",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -12,8 +12,8 @@
       "id": 1
     },
     {
-      "name": "Aplicativo",
-      "budget": "3",
+      "name": "APP",
+      "budget": "5000",
       "category": {
         "id": "1",
         "name": "Infra"
